@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "ds";
+    src: url(font/DS-DIGI.TTF);
+}
+
+* {
+    font-family: ds;
+    color: greenyellow;
+
+}
+
+#authe {
+    display: flex;
+    flex-direction: column;
+    line-height: 3;
+    text-align: center;
+    border: 2px solid gray;
+    width: 50%;
+    margin: auto;
+    align-content: center;
+
+    .inpAU {
+        width: 300px;
+        margin: auto;
+        line-height: 2;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+    }
+
+    #validerAU {
+        font-size: 20px;
+        font-weight: bold;
+        background-color: gray;
+        width: 100px;
+        margin: 10px auto;
+
+    }
+}
+
+body {
+    background-color: black;
+
+
+
+    form {
+        text-align: center;
+        margin-top: 10%;
+
+        p {
+            font-size: 50px;
+            font-weight: bold;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+
+        .btn {
+            color: greenyellow;
+            font-weight: bold;
+            background-color: black;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            font-size: 20px;
+
+
+        }
+
+        .inp {
+            width: 400px;
+            font-size: 30px;
+            height: 15px;
+            color: greenyellow;
+            background-color: black;
+            border: 2px grey solid;
+            padding: 10px 20px;
+        }
+    }
+
+    .form2 {
+        padding-top: 2%;
+        text-align: center;
+        width: 40%;
+        margin: auto;
+        font-size: 30px;
+        line-height: 20px;
+        display: none;
+
+        .lign1 {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+
+
+
+            .bi {
+                margin-right: 10px;
+            }
+
+        }
+    }
+
+
+    .btn1 {
+        color: greenyellow;
+        font-weight: bold;
+        background-color: black;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+
+    .inpt {
+
+        width: 200px;
+        font-size: 30px;
+        height: 15px;
+        color: greenyellow;
+        background-color: black;
+        border: 2px grey solid;
+        padding: 10px 20px;
+    }
+
+    .perder {
+        text-align: center;
+        font-size: 30px;
+
+
+
+        .bi-emoji-frown-fill {
+            font-size: 30px;
+            color: red;
+        }
+
+        .loseMsg,
+        .loseMsg font {
+            color: red !important;
+        }
+
+
+
+
+
+        .inpu {
+            background-color: black;
+            border: 5px red solid;
+        }
+    }
+
+    .frmquiter {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .gangner {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .gangerMsg,
+    .gangerMsg font {
+        color: green;
+    }
+
+    .input {
+        font-size: 20px;
+    }
+}

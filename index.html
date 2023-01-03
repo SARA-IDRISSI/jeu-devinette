@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="devinette.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!--------------------------------------------------form authentification  ------------>
+    <div id="authe">
+        <label for="">Entrer cette Email: eve.holt@reqres.in</label>
+        <label for="">Entrer cette PassWord: cityslicka</label>
+        <input type="email" name="" id="email" placeholder="ENTRER VOTRE EMAIL" class="inpAU">
+
+        <input type="password" name="" id="password" placeholder="ENTRER VOTRE PASSEWORD" class="inpAU">
+        <input type="submit" value="Valider" id="validerAU">
+
+    </div>
+    <!-- ----------------------Form pour entrer votre nom ------------------------------- -->
+
+    <!-- <form action="" id="form1">
+        <p>ENTREZ VOTRE NOM POUR JOUER </p>
+        <input type="text" name="" id="nom" class="inp" placeholder="VOTRE NOM" required>
+        <input type="submit" value="VALIDER" class="btn" id="btnValid">
+    </form> -->
+
+    <!------------------------- Form pour choisisez le niveau -------------------------------------->
+    <div class="form2">
+        <div class="lign1">
+            <div>
+                <i class="bi bi-person-bounding-box"></i>
+                <span class="ico email"> </span>
+
+            </div>
+            <span>SCORE: <span class="scoree">0</span></span>
+
+        </div>
+        <div class="lign2">
+            <div class="items-radio">
+                <span>NIVEAUX :</span>
+                <input type="radio" name="radio" id="facile" class="radio" value="a">
+                <label for="facile">FACILE</label>
+                <input type="radio" name="radio" id="moyen" class="radio" value="b">
+                <label for="moyen">MOYEN</label>
+
+                <input type="radio" name="radio" id="difficile" class="radio" value="c">
+                <label for="difficile">DIFFICILE</label>
+            </div>
+        </div>
+        <audio src="audio/error-126627.mp3" id="error"></audio>
+        <div class="lign3">
+            <!-- facile -->
+
+            <p style="display: none;" class="enterN"> Entrez un nombre entier entre 1 et 10 </p>
+
+            <p class="selectLevelP"> SELECTIONNEZ UN NIVEAU AVANT DE COMMENCER</p>
+            <p style="display: none;" class="errorNmber">Désolé ce n'est pas le bon nombre!</p>
+            <p style="display: none;" class="win">win</p>
+            <p style="display: none;" class="onePoint">Pour chaque nombre valide vous gagnez 1 point </p>
+            <p style="display: none;" class="TroisES"> Vous avez 3 Essais pour deviner</p>
+            <!-- moyen -->
+            <p style="display: none;" class="entreEnt"> Entrez un nombre entier entre 10 et 100 </p>
+
+            <p style="display: none;" class="troisPoint">Pour chaque nombre valide vous gagnez 3 point </p>
+            <p style="display: none;" class="cinqES"> Vous avez 5 Essais pour deviner</p>
+            <p style="display: none;" class="doitEntrerDixCent"> non il faut entre un nombre entre 10 et 100</p>
+            <p style="display: none;" class="pasBonNumber">Désolé ce n'est pas le bon nombre!
+
+            </p>
+
+            <!-- difficile -->
+            <p style="display: none;" class="nombrMille"> Entrez un nombre entier entre 100 et 1000 </p>
+            <p style="display: none;" class="cinqPoint">Pour chaque nombre valide vous gagnez 5 point</p>
+            <p style="display: none;" class="dixEs"> Vous avez 10 Essais pour deviner</p>
+            <p style="display: none;"> non il faut entre un nombre entre 100 et 1000</p>
+            <p style="display: none;" class="pasBNubrD">Désolé ce n'est pas le bon nombre!</p>
+
+        </div>
+
+        <div class="lign4">
+            <input type="number" name="" id="inptNumber" placeholder="NOMBRE" class="inpt">
+            <input type="submit" value="VALIDER" class="btn1" id="btnLEVEL">
+        </div>
+    </div>
+    <!------------------------- Form si tu gangner -------------------------------------->
+    <div class="gangner" style="display: none;">
+        <i class="bi bi-emoji-smile-fill"></i>
+        <p class="Msg">Bravo <span class="email"></span> vous avez gagné 1 point!</p>
+        <p>Voulez vous continuer?</p>
+        <input type="submit" value="oui" class="inputOui" onclick="playAgain()">
+        <input type="submit" value="non" class="input" onclick="NoPlay()">
+        <audio src="audio/success-1-6297.mp3" id="succes"></audio>
+
+
+    </div>
+    <!------------------------- Form si tu perder -------------------------------------->
+    <div class="perder" style="display: none;">
+        <i class="bi bi-emoji-frown-fill"></i>
+        <p class="loseMsg">Désolé <span class="email"></span> vous avez perdu!</p>
+        <p>Voulez vous réessayer</p>
+        <input type="submit" value="oui" class="inpuoui" onclick="playAgain()">
+        <input type="submit" value="non" class="inpunon" onclick="NoPlay()">
+        <audio src="audio/080047_lose_funny_retro_video-game-80925.mp3" id="lose"></audio>
+
+
+    </div>
+    <!------------------------- Form si tu choisisse de ne pas continue  le jeu -------------------------------------->
+    <div class="frmquiter" style="display: none;">
+        <p>Au revoir <span class="email"></span> !</p>
+        <p> Votre score est : <span class="votreScore"></span></p>
+
+    </div>
+
+    <script src="devinette.js"></script>
+</body>
+
+</html>

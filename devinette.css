@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "ds";
+  src: url(font/DS-DIGI.TTF);
+}
+* {
+  font-family: ds;
+  color: greenyellow;
+}
+
+#authe {
+  display: flex;
+  flex-direction: column;
+  line-height: 3;
+  text-align: center;
+  border: 2px solid gray;
+  width: 50%;
+  margin: auto;
+  align-content: center;
+}
+#authe .inpAU {
+  width: 300px;
+  margin: auto;
+  line-height: 2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#authe #validerAU {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: gray;
+  width: 100px;
+  margin: 10px auto;
+}
+
+body {
+  background-color: black;
+}
+body form {
+  text-align: center;
+  margin-top: 10%;
+}
+body form p {
+  font-size: 50px;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+body form .btn {
+  color: greenyellow;
+  font-weight: bold;
+  background-color: black;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+body form .inp {
+  width: 400px;
+  font-size: 30px;
+  height: 15px;
+  color: greenyellow;
+  background-color: black;
+  border: 2px grey solid;
+  padding: 10px 20px;
+}
+body .form2 {
+  padding-top: 2%;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  font-size: 30px;
+  line-height: 20px;
+  display: none;
+}
+body .form2 .lign1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+body .form2 .lign1 .bi {
+  margin-right: 10px;
+}
+body .btn1 {
+  color: greenyellow;
+  font-weight: bold;
+  background-color: black;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+body .inpt {
+  width: 200px;
+  font-size: 30px;
+  height: 15px;
+  color: greenyellow;
+  background-color: black;
+  border: 2px grey solid;
+  padding: 10px 20px;
+}
+body .perder {
+  text-align: center;
+  font-size: 30px;
+}
+body .perder .bi-emoji-frown-fill {
+  font-size: 30px;
+  color: red;
+}
+body .perder .loseMsg,
+body .perder .loseMsg font {
+  color: red !important;
+}
+body .perder .inpu {
+  background-color: black;
+  border: 5px red solid;
+}
+body .frmquiter {
+  text-align: center;
+  font-size: 30px;
+}
+body .gangner {
+  font-size: 30px;
+  text-align: center;
+}
+body .gangerMsg,
+body .gangerMsg font {
+  color: green;
+}
+body .input {
+  font-size: 20px;
+}/*# sourceMappingURL=devinette.css.map */
